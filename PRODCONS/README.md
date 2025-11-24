@@ -37,7 +37,8 @@ The program also supports an automated mode (`--all`) that runs all 18 assignmen
 ------------------------------------------------------------
 
 ```
-PRODCONS/
+CS471PROJECT/
+ └── PRODCONS/
       ├── Makefile
       ├── README.md
       ├── lab_report.md
@@ -46,8 +47,8 @@ PRODCONS/
       ├── bin/
       │    └── PRODCONS
       └── src/
-          ├── PRODCONS.c
-          └── PRODCONS.o
+           ├── PRODCONS.c
+           └── PRODCONS.o
 ```
 
 ------------------------------------------------------------
@@ -177,4 +178,5 @@ Full 18-run sample is in sample_output.txt.
 - All sales data is randomly generated.
 - The --all mode is provided to simplify grading.
 - Part 2 (VMEMMAN) is in its own folder and independent from this assignment.
+
 
