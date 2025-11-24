@@ -36,19 +36,19 @@ The program also supports an automated mode (`--all`) that runs all 18 assignmen
 2. Files Included
 ------------------------------------------------------------
 
+```
 PRODCONS/
-│
-├── src/
-│   └── PRODCONS.c            (Main program source)
-│
-├── bin/
-│   └── PRODCONS              (Compiled executable)
-│
-├── Makefile                  (Build script)
-│
-├── sample_output.txt         (Output from all 18 required runs)
-│
-└── README.md                 (This file)
+      ├── Makefile
+      ├── README.md
+      ├── lab_report.md
+      ├── sample_input.txt
+      ├── sample_output.txt
+      ├── bin/
+      │    └── PRODCONS
+      └── src/
+          ├── PRODCONS.c
+          └── PRODCONS.o
+```
 
 ------------------------------------------------------------
 3. Building the Program
@@ -177,3 +177,4 @@ Full 18-run sample is in sample_output.txt.
 - All sales data is randomly generated.
 - The --all mode is provided to simplify grading.
 - Part 2 (VMEMMAN) is in its own folder and independent from this assignment.
+
