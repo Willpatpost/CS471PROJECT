@@ -1,0 +1,27 @@
+Sample Input for PRODCONS (Mock Data)
+
+These records simulate the type of sales entries normally generated
+internally by producer threads. This file is ONLY a sample and is not
+read by the program.
+
+Random Sample Records:
+14/07/16, store=2, register=1, amount=407.05
+21/03/16, store=9, register=5, amount=517.21
+17/04/16, store=6, register=5, amount=420.09
+29/03/16, store=1, register=2, amount=809.02
+01/06/16, store=5, register=6, amount=899.79
+08/03/16, store=2, register=1, amount=842.46
+05/09/16, store=9, register=1, amount=706.13
+26/04/16, store=3, register=4, amount=970.89
+09/02/16, store=4, register=1, amount=226.11
+22/10/16, store=6, register=1, amount=842.57
+10/12/16, store=1, register=5, amount=44.33
+23/03/16, store=1, register=1, amount=509.74
+08/06/16, store=3, register=1, amount=843.88
+06/07/16, store=6, register=6, amount=617.78
+17/01/16, store=5, register=5, amount=693.67
+10/12/16, store=2, register=5, amount=324.34
+14/12/16, store=10, register=4, amount=633.76
+17/05/16, store=8, register=4, amount=487.97
+07/03/16, store=1, register=6, amount=300.35
+13/02/16, store=3, register=1, amount=933.96

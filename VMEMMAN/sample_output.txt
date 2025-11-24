@@ -1,0 +1,16 @@
+Loaded 3000 virtual addresses. Beginning analysis...
+
+==================== VMEM RESULTS ====================
+PageSize=512 Frames=4 | FIFO=80.37%  LRU=80.00%  MRU=93.10%  OPT=56.63%
+PageSize=512 Frames=8 | FIFO=61.00%  LRU=60.10%  MRU=91.50%  OPT=34.23%
+PageSize=512 Frames=12 | FIFO=42.97%  LRU=42.07%  MRU=88.97%  OPT=21.20%
+------------------------------------------------------
+PageSize=1024 Frames=4 | FIFO=61.40%  LRU=60.47%  MRU=86.03%  OPT=37.90%
+PageSize=1024 Frames=8 | FIFO=23.60%  LRU=22.80%  MRU=81.03%  OPT=11.27%
+PageSize=1024 Frames=12 | FIFO=3.57%  LRU=3.57%  MRU=77.27%  OPT=3.40%
+------------------------------------------------------
+PageSize=2048 Frames=4 | FIFO=26.67%  LRU=26.03%  MRU=73.40%  OPT=13.97%
+PageSize=2048 Frames=8 | FIFO=1.90%  LRU=1.90%  MRU=66.30%  OPT=1.73%
+PageSize=2048 Frames=12 | FIFO=1.83%  LRU=1.83%  MRU=60.40%  OPT=1.63%
+------------------------------------------------------
+======================== DONE ========================

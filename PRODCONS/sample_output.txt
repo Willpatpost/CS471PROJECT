@@ -1,0 +1,1086 @@
+CS471/571 – Problem 1 (PRODCONS)
+All 18 runs (p in {2,5,10}, c in {2,5,10}, b in {3,10})
+Each run produces 1000 items; SPEC (5–40ms sleeps) mode.
+
+---------- Starting run: P=2  C=2  B=3 ----------
+
+--- Consumer 0 summary ---
+Local aggregate: 247461.19
+Top store: 1 total=129040.26
+Next store: 2 total=118420.93
+
+--- Consumer 1 summary ---
+Local aggregate: 249855.02
+Top store: 1 total=129989.20
+Next store: 2 total=119865.82
+
+====================================
+RUN  P=2  C=2  B=3
+Produced=1000  Consumed=1000  Time=11563.64 ms
+
+==== Overall Per-Store Totals ====
+Store  1: 259029.46
+Store  2: 238286.75
+
+==== Overall Per-Month Totals ====
+Jan: 38135.35
+Feb: 33199.41
+Mar: 39695.95
+Apr: 46021.26
+May: 41292.54
+Jun: 50927.99
+Jul: 35397.92
+Aug: 44449.70
+Sep: 39200.73
+Oct: 48324.16
+Nov: 34112.92
+Dec: 46558.28
+
+==== Overall Aggregate ====
+TOTAL: 497316.21
+====================================
+
+---------- Starting run: P=2  C=2  B=10 ----------
+
+--- Consumer 0 summary ---
+Local aggregate: 233933.01
+Top store: 1 total=121305.71
+Next store: 2 total=112627.30
+
+--- Consumer 1 summary ---
+Local aggregate: 238597.71
+Top store: 2 total=119919.05
+Next store: 1 total=118678.66
+
+====================================
+RUN  P=2  C=2  B=10
+Produced=1000  Consumed=1000  Time=11398.08 ms
+
+==== Overall Per-Store Totals ====
+Store  1: 239984.37
+Store  2: 232546.35
+
+==== Overall Per-Month Totals ====
+Jan: 32322.96
+Feb: 37869.72
+Mar: 33752.74
+Apr: 40799.57
+May: 42727.93
+Jun: 37000.78
+Jul: 42595.23
+Aug: 46581.20
+Sep: 38371.91
+Oct: 39281.00
+Nov: 41303.28
+Dec: 39924.40
+
+==== Overall Aggregate ====
+TOTAL: 472530.72
+====================================
+
+---------- Starting run: P=2  C=5  B=3 ----------
+
+--- Consumer 3 summary ---
+Local aggregate: 98742.35
+Top store: 1 total=49851.42
+Next store: 2 total=48890.93
+
+--- Consumer 4 summary ---
+Local aggregate: 93679.70
+Top store: 2 total=47029.75
+Next store: 1 total=46649.95
+
+--- Consumer 1 summary ---
+Local aggregate: 95558.71
+Top store: 1 total=54806.14
+Next store: 2 total=40752.57
+
+--- Consumer 2 summary ---
+Local aggregate: 97285.93
+Top store: 2 total=51644.87
+Next store: 1 total=45641.06
+
+--- Consumer 0 summary ---
+Local aggregate: 95489.02
+Top store: 2 total=48471.34
+Next store: 1 total=47017.68
+
+====================================
+RUN  P=2  C=5  B=3
+Produced=1000  Consumed=1000  Time=11669.27 ms
+
+==== Overall Per-Store Totals ====
+Store  1: 243966.25
+Store  2: 236789.46
+
+==== Overall Per-Month Totals ====
+Jan: 39157.49
+Feb: 42588.64
+Mar: 34703.63
+Apr: 34792.90
+May: 40012.72
+Jun: 32214.57
+Jul: 45028.63
+Aug: 43694.63
+Sep: 33366.38
+Oct: 43346.78
+Nov: 43551.89
+Dec: 48297.45
+
+==== Overall Aggregate ====
+TOTAL: 480755.71
+====================================
+
+---------- Starting run: P=2  C=5  B=10 ----------
+
+--- Consumer 3 summary ---
+Local aggregate: 95597.60
+Top store: 1 total=50148.66
+Next store: 2 total=45448.94
+
+--- Consumer 4 summary ---
+Local aggregate: 99342.00
+Top store: 2 total=52872.51
+Next store: 1 total=46469.49
+
+--- Consumer 0 summary ---
+Local aggregate: 99818.72
+Top store: 1 total=52869.38
+Next store: 2 total=46949.34
+
+--- Consumer 1 summary ---
+Local aggregate: 106467.32
+Top store: 1 total=56612.02
+Next store: 2 total=49855.30
+
+--- Consumer 2 summary ---
+Local aggregate: 107595.65
+Top store: 2 total=54834.25
+Next store: 1 total=52761.40
+
+====================================
+RUN  P=2  C=5  B=10
+Produced=1000  Consumed=1000  Time=11565.89 ms
+
+==== Overall Per-Store Totals ====
+Store  1: 258860.95
+Store  2: 249960.34
+
+==== Overall Per-Month Totals ====
+Jan: 36742.96
+Feb: 36279.64
+Mar: 37080.37
+Apr: 41700.38
+May: 47776.14
+Jun: 50894.71
+Jul: 42139.40
+Aug: 46783.54
+Sep: 39497.30
+Oct: 39170.34
+Nov: 44623.08
+Dec: 46133.43
+
+==== Overall Aggregate ====
+TOTAL: 508821.29
+====================================
+
+---------- Starting run: P=2  C=10  B=3 ----------
+
+--- Consumer 9 summary ---
+Local aggregate: 46528.73
+Top store: 2 total=26983.49
+Next store: 1 total=19545.24
+
+--- Consumer 1 summary ---
+Local aggregate: 47028.80
+Top store: 1 total=27283.14
+Next store: 2 total=19745.66
+
+--- Consumer 0 summary ---
+Local aggregate: 54659.54
+Top store: 1 total=27977.06
+Next store: 2 total=26682.48
+
+--- Consumer 7 summary ---
+Local aggregate: 49381.46
+Top store: 1 total=25605.76
+Next store: 2 total=23775.70
+
+--- Consumer 6 summary ---
+Local aggregate: 51032.09
+Top store: 1 total=29815.58
+Next store: 2 total=21216.51
+
+--- Consumer 3 summary ---
+Local aggregate: 48498.01
+Top store: 2 total=24601.82
+Next store: 1 total=23896.19
+
+--- Consumer 8 summary ---
+Local aggregate: 51342.02
+Top store: 1 total=27714.05
+Next store: 2 total=23627.97
+
+--- Consumer 5 summary ---
+Local aggregate: 50889.56
+Top store: 2 total=28017.12
+Next store: 1 total=22872.44
+
+--- Consumer 2 summary ---
+Local aggregate: 51560.43
+Top store: 1 total=27683.83
+Next store: 2 total=23876.60
+
+--- Consumer 4 summary ---
+Local aggregate: 47946.64
+Top store: 1 total=29201.52
+Next store: 2 total=18745.12
+
+====================================
+RUN  P=2  C=10  B=3
+Produced=1000  Consumed=1000  Time=11531.85 ms
+
+==== Overall Per-Store Totals ====
+Store  1: 261594.81
+Store  2: 237272.47
+
+==== Overall Per-Month Totals ====
+Jan: 45745.23
+Feb: 39079.63
+Mar: 45707.88
+Apr: 37463.29
+May: 39991.43
+Jun: 38765.46
+Jul: 36532.65
+Aug: 39110.86
+Sep: 47729.77
+Oct: 44396.03
+Nov: 39089.36
+Dec: 45255.69
+
+==== Overall Aggregate ====
+TOTAL: 498867.28
+====================================
+
+---------- Starting run: P=2  C=10  B=10 ----------
+
+--- Consumer 8 summary ---
+Local aggregate: 52222.56
+Top store: 2 total=29501.93
+Next store: 1 total=22720.63
+
+--- Consumer 1 summary ---
+Local aggregate: 53363.60
+Top store: 1 total=28607.48
+Next store: 2 total=24756.12
+
+--- Consumer 3 summary ---
+Local aggregate: 45340.01
+Top store: 1 total=22822.45
+Next store: 2 total=22517.56
+
+--- Consumer 5 summary ---
+Local aggregate: 52869.82
+Top store: 2 total=29977.23
+Next store: 1 total=22892.59
+
+--- Consumer 6 summary ---
+Local aggregate: 45663.41
+Top store: 1 total=24454.37
+Next store: 2 total=21209.04
+
+--- Consumer 0 summary ---
+Local aggregate: 54132.01
+Top store: 1 total=30044.24
+Next store: 2 total=24087.77
+
+--- Consumer 4 summary ---
+Local aggregate: 54706.01
+Top store: 1 total=33155.37
+Next store: 2 total=21550.64
+
+--- Consumer 9 summary ---
+Local aggregate: 48174.08
+Top store: 2 total=27089.43
+Next store: 1 total=21084.65
+
+--- Consumer 7 summary ---
+Local aggregate: 46714.88
+Top store: 2 total=23572.77
+Next store: 1 total=23142.11
+
+--- Consumer 2 summary ---
+Local aggregate: 42605.94
+Top store: 2 total=22955.43
+Next store: 1 total=19650.51
+
+====================================
+RUN  P=2  C=10  B=10
+Produced=1000  Consumed=1000  Time=11606.49 ms
+
+==== Overall Per-Store Totals ====
+Store  1: 248574.40
+Store  2: 247217.92
+
+==== Overall Per-Month Totals ====
+Jan: 35357.78
+Feb: 41882.07
+Mar: 40946.50
+Apr: 34405.37
+May: 31848.42
+Jun: 48243.69
+Jul: 38883.73
+Aug: 44608.17
+Sep: 47872.40
+Oct: 39655.98
+Nov: 44818.82
+Dec: 47269.39
+
+==== Overall Aggregate ====
+TOTAL: 495792.32
+====================================
+
+---------- Starting run: P=5  C=2  B=3 ----------
+
+--- Consumer 0 summary ---
+Local aggregate: 245578.50
+Top store: 3 total=56391.63
+Next store: 1 total=51476.22
+
+--- Consumer 1 summary ---
+Local aggregate: 244111.79
+Top store: 4 total=52722.40
+Next store: 2 total=49312.27
+
+====================================
+RUN  P=5  C=2  B=3
+Produced=1000  Consumed=1000  Time=4644.58 ms
+
+==== Overall Per-Store Totals ====
+Store  1: 98838.33
+Store  2: 97190.42
+Store  3: 104028.29
+Store  4: 96203.64
+Store  5: 93429.61
+
+==== Overall Per-Month Totals ====
+Jan: 42906.18
+Feb: 35320.93
+Mar: 37578.34
+Apr: 36746.88
+May: 43190.30
+Jun: 39319.45
+Jul: 39661.30
+Aug: 38138.54
+Sep: 44425.21
+Oct: 50756.99
+Nov: 39208.30
+Dec: 42437.87
+
+==== Overall Aggregate ====
+TOTAL: 489690.29
+====================================
+
+---------- Starting run: P=5  C=2  B=10 ----------
+
+--- Consumer 0 summary ---
+Local aggregate: 253730.65
+Top store: 2 total=53199.91
+Next store: 3 total=53009.94
+
+--- Consumer 1 summary ---
+Local aggregate: 248019.79
+Top store: 1 total=54609.69
+Next store: 2 total=50140.28
+
+====================================
+RUN  P=5  C=2  B=10
+Produced=1000  Consumed=1000  Time=4569.31 ms
+
+==== Overall Per-Store Totals ====
+Store  1: 101163.48
+Store  2: 103340.19
+Store  3: 99761.69
+Store  4: 96379.91
+Store  5: 101105.17
+
+==== Overall Per-Month Totals ====
+Jan: 41760.59
+Feb: 45576.90
+Mar: 46306.52
+Apr: 39765.66
+May: 40976.40
+Jun: 52922.34
+Jul: 44878.24
+Aug: 42051.71
+Sep: 44841.67
+Oct: 36693.39
+Nov: 34374.42
+Dec: 31602.60
+
+==== Overall Aggregate ====
+TOTAL: 501750.44
+====================================
+
+---------- Starting run: P=5  C=5  B=3 ----------
+
+--- Consumer 2 summary ---
+Local aggregate: 98421.03
+Top store: 2 total=25129.88
+Next store: 5 total=21064.97
+
+--- Consumer 3 summary ---
+Local aggregate: 105454.34
+Top store: 4 total=23950.35
+Next store: 5 total=23426.46
+
+--- Consumer 4 summary ---
+Local aggregate: 93907.12
+Top store: 2 total=21830.91
+Next store: 3 total=21559.36
+
+--- Consumer 1 summary ---
+Local aggregate: 106740.33
+Top store: 3 total=24015.48
+Next store: 4 total=22159.07
+
+--- Consumer 0 summary ---
+Local aggregate: 98870.47
+Top store: 4 total=26447.26
+Next store: 2 total=19402.25
+
+====================================
+RUN  P=5  C=5  B=3
+Produced=1000  Consumed=1000  Time=4716.16 ms
+
+==== Overall Per-Store Totals ====
+Store  1: 95374.83
+Store  2: 108556.60
+Store  3: 99469.89
+Store  4: 104918.42
+Store  5: 95073.55
+
+==== Overall Per-Month Totals ====
+Jan: 39538.35
+Feb: 46655.39
+Mar: 44799.94
+Apr: 42266.20
+May: 49258.91
+Jun: 47267.76
+Jul: 39024.16
+Aug: 37352.74
+Sep: 41155.60
+Oct: 35901.15
+Nov: 42380.59
+Dec: 37792.50
+
+==== Overall Aggregate ====
+TOTAL: 503393.29
+====================================
+
+---------- Starting run: P=5  C=5  B=10 ----------
+
+--- Consumer 0 summary ---
+Local aggregate: 105590.07
+Top store: 3 total=23774.79
+Next store: 5 total=22487.62
+
+--- Consumer 4 summary ---
+Local aggregate: 95961.32
+Top store: 1 total=20270.78
+Next store: 5 total=19548.97
+
+--- Consumer 2 summary ---
+Local aggregate: 95162.46
+Top store: 2 total=21700.74
+Next store: 3 total=19525.19
+
+--- Consumer 3 summary ---
+Local aggregate: 107518.69
+Top store: 4 total=25969.86
+Next store: 2 total=24773.95
+
+--- Consumer 1 summary ---
+Local aggregate: 106638.69
+Top store: 3 total=22769.23
+Next store: 2 total=22260.28
+
+====================================
+RUN  P=5  C=5  B=10
+Produced=1000  Consumed=1000  Time=4593.29 ms
+
+==== Overall Per-Store Totals ====
+Store  1: 94926.55
+Store  2: 108849.49
+Store  3: 106649.65
+Store  4: 98851.57
+Store  5: 101593.97
+
+==== Overall Per-Month Totals ====
+Jan: 49744.78
+Feb: 39911.63
+Mar: 38319.43
+Apr: 36574.23
+May: 45663.65
+Jun: 49803.07
+Jul: 45466.41
+Aug: 42438.86
+Sep: 41565.58
+Oct: 41269.62
+Nov: 45146.60
+Dec: 34967.37
+
+==== Overall Aggregate ====
+TOTAL: 510871.23
+====================================
+
+---------- Starting run: P=5  C=10  B=3 ----------
+
+--- Consumer 5 summary ---
+Local aggregate: 45564.02
+Top store: 3 total=13301.66
+Next store: 2 total=9805.07
+
+--- Consumer 9 summary ---
+Local aggregate: 53362.12
+Top store: 5 total=16547.41
+Next store: 1 total=12658.68
+
+--- Consumer 8 summary ---
+Local aggregate: 55135.08
+Top store: 2 total=13050.00
+Next store: 3 total=11741.84
+
+--- Consumer 7 summary ---
+Local aggregate: 49811.31
+Top store: 1 total=11259.09
+Next store: 4 total=11088.94
+
+--- Consumer 2 summary ---
+Local aggregate: 47686.85
+Top store: 4 total=10477.69
+Next store: 5 total=10467.00
+
+--- Consumer 0 summary ---
+Local aggregate: 53208.55
+Top store: 4 total=14004.77
+Next store: 2 total=11619.11
+
+--- Consumer 6 summary ---
+Local aggregate: 52943.51
+Top store: 1 total=14542.01
+Next store: 5 total=12227.86
+
+--- Consumer 1 summary ---
+Local aggregate: 50967.35
+Top store: 2 total=16761.49
+Next store: 5 total=8814.22
+
+--- Consumer 3 summary ---
+Local aggregate: 48373.24
+Top store: 4 total=13915.70
+Next store: 5 total=11443.78
+
+--- Consumer 4 summary ---
+Local aggregate: 45717.22
+Top store: 5 total=11197.41
+Next store: 4 total=9447.81
+
+====================================
+RUN  P=5  C=10  B=3
+Produced=1000  Consumed=1000  Time=4502.39 ms
+
+==== Overall Per-Store Totals ====
+Store  1: 102007.54
+Store  2: 101799.08
+Store  3: 92307.98
+Store  4: 103851.78
+Store  5: 102802.87
+
+==== Overall Per-Month Totals ====
+Jan: 37221.88
+Feb: 45952.34
+Mar: 40689.54
+Apr: 52723.77
+May: 34977.46
+Jun: 42813.15
+Jul: 41899.22
+Aug: 43077.40
+Sep: 38695.43
+Oct: 34323.96
+Nov: 48748.16
+Dec: 41646.94
+
+==== Overall Aggregate ====
+TOTAL: 502769.25
+====================================
+
+---------- Starting run: P=5  C=10  B=10 ----------
+
+--- Consumer 4 summary ---
+Local aggregate: 49343.90
+Top store: 2 total=11375.13
+Next store: 5 total=11314.55
+
+--- Consumer 7 summary ---
+Local aggregate: 45876.61
+Top store: 5 total=11937.22
+Next store: 3 total=11907.39
+
+--- Consumer 8 summary ---
+Local aggregate: 48154.45
+Top store: 2 total=13463.74
+Next store: 5 total=11522.62
+
+--- Consumer 0 summary ---
+Local aggregate: 49935.07
+Top store: 3 total=11620.59
+Next store: 2 total=9985.95
+
+--- Consumer 1 summary ---
+Local aggregate: 47015.28
+Top store: 1 total=12412.21
+Next store: 5 total=9668.12
+
+--- Consumer 5 summary ---
+Local aggregate: 45815.06
+Top store: 1 total=12646.72
+Next store: 5 total=9462.66
+
+--- Consumer 6 summary ---
+Local aggregate: 51962.61
+Top store: 1 total=12915.25
+Next store: 4 total=10757.07
+
+--- Consumer 2 summary ---
+Local aggregate: 52293.99
+Top store: 4 total=14554.96
+Next store: 3 total=12333.44
+
+--- Consumer 3 summary ---
+Local aggregate: 51945.57
+Top store: 1 total=13450.55
+Next store: 2 total=11111.58
+
+--- Consumer 9 summary ---
+Local aggregate: 47629.64
+Top store: 4 total=11562.08
+Next store: 1 total=10618.30
+
+====================================
+RUN  P=5  C=10  B=10
+Produced=1000  Consumed=1000  Time=4609.66 ms
+
+==== Overall Per-Store Totals ====
+Store  1: 103883.49
+Store  2: 97509.35
+Store  3: 91198.28
+Store  4: 97696.72
+Store  5: 99684.34
+
+==== Overall Per-Month Totals ====
+Jan: 38898.92
+Feb: 41803.90
+Mar: 48616.09
+Apr: 43364.09
+May: 48765.36
+Jun: 51007.58
+Jul: 35765.24
+Aug: 35895.11
+Sep: 32914.79
+Oct: 34121.28
+Nov: 41382.96
+Dec: 37436.86
+
+==== Overall Aggregate ====
+TOTAL: 489972.18
+====================================
+
+---------- Starting run: P=10  C=2  B=3 ----------
+
+--- Consumer 0 summary ---
+Local aggregate: 253521.72
+Top store: 7 total=31376.57
+Next store: 10 total=30098.48
+
+--- Consumer 1 summary ---
+Local aggregate: 242170.33
+Top store: 4 total=28342.60
+Next store: 9 total=28098.22
+
+====================================
+RUN  P=10  C=2  B=3
+Produced=1000  Consumed=1000  Time=2313.28 ms
+
+==== Overall Per-Store Totals ====
+Store  1: 45463.75
+Store  2: 45464.48
+Store  3: 43962.10
+Store  4: 57801.25
+Store  5: 47539.99
+Store  6: 47103.95
+Store  7: 59203.04
+Store  8: 46595.80
+Store  9: 52688.43
+Store 10: 49869.26
+
+==== Overall Per-Month Totals ====
+Jan: 48354.84
+Feb: 44105.04
+Mar: 38575.59
+Apr: 46301.77
+May: 38356.64
+Jun: 39329.82
+Jul: 43157.96
+Aug: 37044.02
+Sep: 35094.56
+Oct: 38001.20
+Nov: 43551.71
+Dec: 43818.90
+
+==== Overall Aggregate ====
+TOTAL: 495692.05
+====================================
+
+---------- Starting run: P=10  C=2  B=10 ----------
+
+--- Consumer 0 summary ---
+Local aggregate: 259058.53
+Top store: 8 total=31159.12
+Next store: 6 total=27985.72
+
+--- Consumer 1 summary ---
+Local aggregate: 234230.59
+Top store: 7 total=27504.35
+Next store: 5 total=25928.08
+
+====================================
+RUN  P=10  C=2  B=10
+Produced=1000  Consumed=1000  Time=2272.78 ms
+
+==== Overall Per-Store Totals ====
+Store  1: 49037.61
+Store  2: 46242.44
+Store  3: 48214.26
+Store  4: 46455.12
+Store  5: 49269.50
+Store  6: 52192.86
+Store  7: 52046.81
+Store  8: 55645.41
+Store  9: 48895.96
+Store 10: 45289.15
+
+==== Overall Per-Month Totals ====
+Jan: 39372.14
+Feb: 46148.20
+Mar: 40084.15
+Apr: 48349.43
+May: 36814.86
+Jun: 37576.44
+Jul: 37109.05
+Aug: 46868.27
+Sep: 36070.24
+Oct: 36866.67
+Nov: 45108.51
+Dec: 42921.16
+
+==== Overall Aggregate ====
+TOTAL: 493289.12
+====================================
+
+---------- Starting run: P=10  C=5  B=3 ----------
+
+--- Consumer 3 summary ---
+Local aggregate: 94039.06
+Top store: 9 total=13462.80
+Next store: 7 total=12141.06
+
+--- Consumer 2 summary ---
+Local aggregate: 94409.65
+Top store: 5 total=13155.68
+Next store: 4 total=12431.90
+
+--- Consumer 4 summary ---
+Local aggregate: 108731.41
+Top store: 10 total=16506.30
+Next store: 3 total=13039.72
+
+--- Consumer 0 summary ---
+Local aggregate: 103244.71
+Top store: 4 total=14377.25
+Next store: 9 total=14137.89
+
+--- Consumer 1 summary ---
+Local aggregate: 101119.65
+Top store: 6 total=13170.47
+Next store: 3 total=12714.99
+
+====================================
+RUN  P=10  C=5  B=3
+Produced=1000  Consumed=1000  Time=2289.37 ms
+
+==== Overall Per-Store Totals ====
+Store  1: 51208.31
+Store  2: 43489.90
+Store  3: 53338.60
+Store  4: 52939.78
+Store  5: 53616.34
+Store  6: 50031.45
+Store  7: 52294.82
+Store  8: 42556.38
+Store  9: 49170.80
+Store 10: 52898.10
+
+==== Overall Per-Month Totals ====
+Jan: 45204.23
+Feb: 38232.25
+Mar: 44588.25
+Apr: 40580.44
+May: 41506.91
+Jun: 42967.78
+Jul: 42136.82
+Aug: 32193.61
+Sep: 45099.93
+Oct: 39729.59
+Nov: 43503.15
+Dec: 45801.52
+
+==== Overall Aggregate ====
+TOTAL: 501544.48
+====================================
+
+---------- Starting run: P=10  C=5  B=10 ----------
+
+--- Consumer 4 summary ---
+Local aggregate: 101269.08
+Top store: 4 total=14412.65
+Next store: 3 total=12890.90
+
+--- Consumer 1 summary ---
+Local aggregate: 98122.46
+Top store: 2 total=12076.57
+Next store: 8 total=11317.80
+
+--- Consumer 3 summary ---
+Local aggregate: 101409.24
+Top store: 6 total=16655.03
+Next store: 7 total=14615.57
+
+--- Consumer 0 summary ---
+Local aggregate: 100337.20
+Top store: 5 total=13739.55
+Next store: 2 total=12975.71
+
+--- Consumer 2 summary ---
+Local aggregate: 96258.30
+Top store: 8 total=11726.25
+Next store: 9 total=11662.94
+
+====================================
+RUN  P=10  C=5  B=10
+Produced=1000  Consumed=1000  Time=2278.90 ms
+
+==== Overall Per-Store Totals ====
+Store  1: 48011.58
+Store  2: 50947.82
+Store  3: 53521.49
+Store  4: 49046.45
+Store  5: 49853.05
+Store  6: 56358.87
+Store  7: 47512.05
+Store  8: 46480.02
+Store  9: 49037.44
+Store 10: 46627.51
+
+==== Overall Per-Month Totals ====
+Jan: 47269.43
+Feb: 41002.12
+Mar: 35396.11
+Apr: 40764.07
+May: 50750.52
+Jun: 42868.63
+Jul: 38824.46
+Aug: 34051.25
+Sep: 43112.04
+Oct: 37582.79
+Nov: 48520.01
+Dec: 37254.85
+
+==== Overall Aggregate ====
+TOTAL: 497396.28
+====================================
+
+---------- Starting run: P=10  C=10  B=3 ----------
+
+--- Consumer 0 summary ---
+Local aggregate: 54998.74
+Top store: 4 total=8465.99
+Next store: 8 total=7076.59
+
+--- Consumer 3 summary ---
+Local aggregate: 50166.63
+Top store: 1 total=6480.06
+Next store: 4 total=6230.67
+
+--- Consumer 4 summary ---
+Local aggregate: 49062.31
+Top store: 4 total=8868.33
+Next store: 8 total=7432.23
+
+--- Consumer 6 summary ---
+Local aggregate: 51455.62
+Top store: 9 total=6729.81
+Next store: 6 total=6570.76
+
+--- Consumer 2 summary ---
+Local aggregate: 47587.22
+Top store: 2 total=8142.58
+Next store: 8 total=6959.36
+
+--- Consumer 5 summary ---
+Local aggregate: 52411.55
+Top store: 6 total=8854.36
+Next store: 3 total=7141.89
+
+--- Consumer 9 summary ---
+Local aggregate: 46772.95
+Top store: 10 total=6713.06
+Next store: 1 total=6159.29
+
+--- Consumer 1 summary ---
+Local aggregate: 59188.17
+Top store: 10 total=9522.14
+Next store: 3 total=8516.43
+
+--- Consumer 7 summary ---
+Local aggregate: 50050.23
+Top store: 6 total=8198.30
+Next store: 8 total=6771.78
+
+--- Consumer 8 summary ---
+Local aggregate: 48384.46
+Top store: 6 total=9071.11
+Next store: 4 total=6434.55
+
+====================================
+RUN  P=10  C=10  B=3
+Produced=1000  Consumed=1000  Time=2264.28 ms
+
+==== Overall Per-Store Totals ====
+Store  1: 49994.55
+Store  2: 49032.43
+Store  3: 48356.16
+Store  4: 59323.90
+Store  5: 45079.17
+Store  6: 58106.49
+Store  7: 46172.57
+Store  8: 55484.10
+Store  9: 48638.78
+Store 10: 49889.73
+
+==== Overall Per-Month Totals ====
+Jan: 43555.59
+Feb: 48772.47
+Mar: 33573.41
+Apr: 43118.49
+May: 39245.52
+Jun: 40945.30
+Jul: 42957.32
+Aug: 44251.81
+Sep: 46472.58
+Oct: 45447.73
+Nov: 40724.22
+Dec: 41013.44
+
+==== Overall Aggregate ====
+TOTAL: 510077.88
+====================================
+
+---------- Starting run: P=10  C=10  B=10 ----------
+
+--- Consumer 0 summary ---
+Local aggregate: 44584.11
+Top store: 6 total=5965.45
+Next store: 1 total=5243.20
+
+--- Consumer 1 summary ---
+Local aggregate: 46401.56
+Top store: 9 total=7041.36
+Next store: 3 total=6446.33
+
+--- Consumer 3 summary ---
+Local aggregate: 49923.21
+Top store: 4 total=7403.46
+Next store: 8 total=6449.85
+
+--- Consumer 2 summary ---
+Local aggregate: 44357.79
+Top store: 2 total=7450.85
+Next store: 1 total=6480.67
+
+--- Consumer 4 summary ---
+Local aggregate: 52140.81
+Top store: 3 total=6737.24
+Next store: 4 total=6731.44
+
+--- Consumer 5 summary ---
+Local aggregate: 52724.01
+Top store: 4 total=7474.72
+Next store: 10 total=7441.13
+
+--- Consumer 7 summary ---
+Local aggregate: 52665.73
+Top store: 7 total=8932.00
+Next store: 4 total=6546.11
+
+--- Consumer 6 summary ---
+Local aggregate: 45678.46
+Top store: 4 total=6602.28
+Next store: 8 total=5785.01
+
+--- Consumer 9 summary ---
+Local aggregate: 53643.15
+Top store: 1 total=8157.60
+Next store: 5 total=7613.15
+
+--- Consumer 8 summary ---
+Local aggregate: 44098.40
+Top store: 10 total=7449.77
+Next store: 2 total=5816.81
+
+====================================
+RUN  P=10  C=10  B=10
+Produced=1000  Consumed=1000  Time=2294.10 ms
+
+==== Overall Per-Store Totals ====
+Store  1: 45820.77
+Store  2: 52187.58
+Store  3: 49798.89
+Store  4: 53747.18
+Store  5: 48183.65
+Store  6: 44982.23
+Store  7: 51489.99
+Store  8: 43902.44
+Store  9: 46384.68
+Store 10: 49719.82
+
+==== Overall Per-Month Totals ====
+Jan: 37322.95
+Feb: 37049.91
+Mar: 40905.64
+Apr: 47432.60
+May: 36212.32
+Jun: 41851.78
+Jul: 40354.89
+Aug: 37862.18
+Sep: 43967.17
+Oct: 37496.03
+Nov: 42946.42
+Dec: 42815.34
+
+==== Overall Aggregate ====
+TOTAL: 486217.23
+====================================
+
+
+All runs complete.
