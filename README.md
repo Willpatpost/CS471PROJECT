@@ -6,7 +6,7 @@ This repository contains the full implementation of the two required components 
 1. PRODCONS – A multithreaded producer–consumer simulation using bounded buffers, semaphores, mutexes, shared memory, and statistical aggregation.
 2. VMEMMAN – A virtual memory management simulator comparing four page replacement algorithms across multiple page sizes and frame counts.
 
-Both projects include:
+Both parts include:
 - A README.md with build and run instructions
 - A Makefile building object files into src/ and executables into bin/
 - Documented source code
@@ -71,15 +71,18 @@ Buffer sizes: 3, 10
 18 total runs (summarized in lab_report.md)
 
 Build:
+```
 cd PRODCONS
 make
-
+```
 Run:
+```
 ./bin/prodcons <p> <c> <b>
-
+```
 Clean:
+```
 make clean
-
+```
 ------------------------------------------------------------
 Problem 2. VMEMMAN – Virtual Memory Management Simulator
 ------------------------------------------------------------
@@ -99,18 +102,22 @@ Frame counts: 4, 8, 12
 Nine total configurations (summarized in lab_report.md)
 
 Build:
+```
 cd VMEMMAN
 make
-
+```
 Run:
+```
 ./bin/VMEMMAN <input_file> <page_size> <frames>
-
+```
 Example:
+```
 ./bin/VMEMMAN sample_input.txt 1024 8
-
+```
 Clean:
+```
 make clean
-
+```
 ------------------------------------------------------------
 Notes
 ------------------------------------------------------------
