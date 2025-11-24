@@ -1,165 +1,155 @@
-============================================================
-CS 471 / 571 – Problem 1 Report
-Producer–Consumer Simulation with Statistics
-Author: William Poston
-Date: 11/23/2025
-============================================================
+# CS 471 / 571 — Problem 1 Report
+## Producer–Consumer Simulation with Statistics
+**Author:** William Poston  
+**Date:** November 23, 2025  
 
-1. Introduction
-------------------------------------------------------------
-This report summarizes the results of 18 experimental runs of the
-Producer–Consumer simulation specified in Problem 1. The program
-implements a multi-threaded bounded-buffer system using POSIX
-threads, semaphores, mutexes, and atomic counters.
+---
 
-Each run terminates after 1000 total sales records are produced.
-Performance is measured as total wall-clock time for the entire run.
-The experiments evaluate how the number of producers (P), consumers
-(C), and buffer size (B) affect performance.
+## 1. Introduction
 
+This report presents the analysis of 18 experimental runs of the Producer–Consumer simulation developed for Problem 1. The program models a multi-threaded bounded-buffer system implemented using POSIX threads, semaphores, mutexes, and atomic counters.
 
-2. Experimental Setup
-------------------------------------------------------------
-The required experiments cover all combinations of:
+Each experimental run terminates after 1000 total sales records are produced. Performance is measured using the total wall-clock time required to complete the run. The experiments investigate how the number of producers (P), the number of consumers (C), and the buffer size (B) influence overall performance.
 
-- Producers P ∈ {2, 5, 10}
-- Consumers C ∈ {2, 5, 10}
-- Buffer sizes B ∈ {3, 10}
+---
 
-This yields 18 total runs.
+## 2. Experimental Setup
 
-Each run prints:
-- Per-consumer statistics
-- Global per-store totals
-- Global per-month totals
-- Final aggregate revenue
-- Total execution time in milliseconds
+The simulation evaluates all required combinations of the following three parameters:
 
-All results were taken from the attached sample_output.txt file, which
-contains the raw output from the program’s --all mode.
+- **Producers (P):** 2, 5, 10  
+- **Consumers (C):** 2, 5, 10  
+- **Buffer Sizes (B):** 3, 10  
 
+This produces **18 total runs**.
 
-3. Observed Execution Times
-------------------------------------------------------------
-Below is a condensed table of execution times extracted from the real
-program output. (Values rounded to nearest millisecond.)
+Each run outputs:
+- Per-consumer statistics  
+- Global per-store totals  
+- Global per-month totals  
+- Final revenue aggregation  
+- Total execution time in milliseconds  
 
-P   C    B     Time (ms)
---------------------------------
-2   2    3     11534
-2   2    10    11366
-2   5    3     5248
-2   5    10    5072
-2   10   3     3348
-2   10   10    3263
+All results included in this report were extracted from the provided `sample_output.txt` produced by the program’s `--all` mode.
 
-5   2    3     4081
-5   2    10    3768
-5   5    3     2854
-5   5    10    2691
-5   10   3     2307
-5   10   10    2281
+---
 
-10  2    3     2617
-10  2    10    2464
-10  5    3     2088
-10  5    10    1996
-10  10   3     1822
-10  10   10    1797
+## 3. Observed Execution Times
 
+Table 1 summarizes the execution times measured across all parameter combinations (rounded to the nearest millisecond).
 
-4. Analysis of Results
-------------------------------------------------------------
+### Table 1. Execution Time by (P, C, B)
+| P  | C  | B  | Time (ms) |
+|----|----|----|-----------|
+| 2  | 2  | 3  | 11534 |
+| 2  | 2  | 10 | 11366 |
+| 2  | 5  | 3  | 5248  |
+| 2  | 5  | 10 | 5072  |
+| 2  | 10 | 3  | 3348  |
+| 2  | 10 | 10 | 3263  |
+| 5  | 2  | 3  | 4081  |
+| 5  | 2  | 10 | 3768  |
+| 5  | 5  | 3  | 2854  |
+| 5  | 5  | 10 | 2691  |
+| 5  | 10 | 3  | 2307  |
+| 5  | 10 | 10 | 2281  |
+| 10 | 2  | 3  | 2617  |
+| 10 | 2  | 10 | 2464  |
+| 10 | 5  | 3  | 2088  |
+| 10 | 5  | 10 | 1996  |
+| 10 | 10 | 3  | 1822  |
+| 10 | 10 | 10 | 1797  |
 
-4.1 Effect of Number of Producers (P)
-Increasing P reliably decreases total runtime.
+---
 
-Reason:
-With more producers, items enter the buffer more quickly. Since the
-system stops after a fixed 1000 items, additional production parallelism
-reduces total simulation time.
+## 4. Analysis of Results
 
-Example:
-- P = 2, C = 2, B = 3 → ~11.5 seconds
-- P = 5, C = 2, B = 3 → ~4.0 seconds
-- P = 10, C = 2, B = 3 → ~2.6 seconds
+### 4.1 Effect of Number of Producers (P)
 
-This nearly linear improvement matches expectations for a producer-
-limited workload.
+Increasing the number of producers reliably decreases total runtime.
 
-4.2 Effect of Number of Consumers (C)
-Increasing C also reduces runtime, but with diminishing returns.
+**Reason:**  
+More producers generate sales records more quickly. Since each run ends after 1000 items, increased production parallelism directly reduces total execution time.
 
-When C is small (e.g., 2):
-- Consumers become a bottleneck.
+**Example:**  
+- P = 2, C = 2, B = 3 → **~11.5 seconds**  
+- P = 5, C = 2, B = 3 → **~4.0 seconds**  
+- P = 10, C = 2, B = 3 → **~2.6 seconds**  
+
+This trend reflects a nearly linear improvement, consistent with a producer-limited workload.
+
+---
+
+### 4.2 Effect of Number of Consumers (C)
+
+Increasing the number of consumers also reduces runtime, but benefits diminish once consumption is no longer the bottleneck.
+
+**When C is small (e.g., 2):**
+- Consumers cannot keep up.
 - Producers frequently block on a full buffer.
 
-When C increases to 5 or 10:
-- Consumption keeps pace with production.
-- Runtime improves moderately.
+**Increasing C to 5 or 10:**
+- Consumption rate becomes competitive with production.
+- Runtime improves, but with smaller gains beyond C ≥ 5.
 
-However, after C ≥ 5, the gains become smaller because consumption
-is no longer the dominant bottleneck.
+---
 
-4.3 Effect of Buffer Size (B)
-Changing buffer size from 3 → 10 produces only small improvements.
+### 4.3 Effect of Buffer Size (B)
 
-Reason:
-With atomic counters and short producer sleep intervals, producers and
-consumers remain active almost continually. The buffer is never the
-primary bottleneck. A size of 3 is already sufficient to prevent excessive
-blocking.
+Increasing buffer size from 3 to 10 yields only small performance improvements.
 
-Overall:
-- B = 3: Slightly more semaphore contention
-- B = 10: Smoother operation but minimal impact
+**Reason:**  
+Producers and consumers both run frequently with minimal idle time due to short sleep intervals and atomic counters. The buffer rarely becomes the system's bottleneck.
 
-Impact: Typically < 5%.
+**Impact:** Typically less than **5%**.
 
-4.4 Combined Effects
-The fastest runs occur when both P and C are large:
+Summary:  
+- **B = 3:** Slightly more contention.  
+- **B = 10:** Smoother operation, minor effect.  
 
-- P = 10, C = 10, B = 10 → ~1797 ms
+---
 
-The slowest runs occur when both P and C are small:
+### 4.4 Combined Effects
 
-- P = 2, C = 2, B = 3 → ~11534 ms
+The fastest and slowest configurations illustrate the combined influence of P, C, and B:
 
-This is consistent with the model:
-- More producers = faster item creation
-- More consumers = faster item processing
-- Larger buffer = fewer stalls, but minor effect overall
+- **Fastest:** P = 10, C = 10, B = 10 → **~1797 ms**  
+- **Slowest:** P = 2, C = 2, B = 3 → **~11534 ms**  
 
+These results align with expectations:  
+- More producers → faster record creation  
+- More consumers → faster processing  
+- Larger buffer → fewer stalls, but overall minor impact  
 
-5. Correctness Observations
-------------------------------------------------------------
-From all 18 runs:
+---
 
-- Each run shows “Produced=1000” and “Consumed=1000”.
-- No deadlocks or hangs occurred.
-- Each consumer correctly printed:
-  - Local aggregate
-  - Top 2 stores processed
-- Global statistics were consistent with the sum of all local statistics.
-- Month-wise totals and store totals were reasonable and varied each run,
-  matching expected random data generation.
+## 5. Correctness Observations
 
+Across all 18 executions:
 
-6. Conclusions
-------------------------------------------------------------
-The experimental results show:
+- Each run correctly shows *Produced = 1000* and *Consumed = 1000*.  
+- No deadlocks, stalls, or hangs occurred.  
+- Each consumer printed:
+  - A local aggregate  
+  - Its top two stores processed  
+- Global totals matched the sum of all local statistics.  
+- Monthly and per-store totals varied appropriately, consistent with randomized record generation.
 
-1. Increasing producers dramatically reduces runtime.  
-2. Increasing consumers also reduces runtime but with diminishing returns.  
-3. Buffer size has minimal overall effect compared to P and C.  
-4. The program successfully implements a correct and efficient bounded-
-   buffer producer–consumer system with synchronized global statistics.  
-5. All assignment requirements for Problem 1 were met, including:
-   - Multi-threading
-   - Proper semaphore and mutex synchronization
-   - Shared statistics
-   - Correct termination conditions
-   - Experimental evaluation over 18 parameter combinations
+All output matched expected simulation behavior.
 
-This concludes the report for Problem 1.
-------------------------------------------------------------
+---
+
+## 6. Conclusions
+
+The experimental findings support the following conclusions:
+
+1. **Increasing the number of producers significantly reduces runtime.**  
+2. **Increasing the number of consumers reduces runtime but with diminishing returns.**  
+3. **Buffer size has minimal impact** compared to P and C.  
+4. The implementation correctly and efficiently models a synchronized bounded-buffer producer–consumer system.  
+5. All assignment requirements for Problem 1 were successfully met, including:
+   - Correct use of POSIX threads  
+   - Proper synchronization with semaphores and mutexes  
+   - Shared global statistics  
+   - Correct termination after exactly 1000 items  
+   - Full evaluation of all 18 parameter combinations  
