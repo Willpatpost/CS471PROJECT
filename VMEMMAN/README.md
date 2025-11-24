@@ -37,19 +37,20 @@ This implementation is intentionally **simple, readable, and highly documented**
 ------------------------------------------------------------
 2. Files Included
 ------------------------------------------------------------
-
-VMEMMAN/
-│
-├── VMEMMAN.c                 (Main program source; fully documented)
-│
-├── VMEMMAN                   (Compiled executable – Linux/WSL)
-│
-├── sample_input.txt          (Trace file of byte-addressable virtual addresses)
-│
-├── sample_output.txt         (Program output using the above input file)
-│
-└── README.md                 (This file)
-
+```
+CS471PROJECT/
+ └── VMEMMAN/
+      ├── Makefile
+      ├── README.md
+      ├── lab_report.md
+      ├── sample_input.txt
+      ├── sample_output.txt
+      ├── bin/
+      │    └── VMEMMAN
+      └── src/
+           ├── VMEMMAN.c
+           └── VMEMMAN.o
+```
 ------------------------------------------------------------
 3. Building the Program
 ------------------------------------------------------------
@@ -170,3 +171,4 @@ Full output is included in `sample_output.txt`.
 - OPT serves as a baseline to compare FIFO/LRU/MRU effectiveness.  
 - MRU is intentionally included to show how certain policies degrade performance.  
 - This program is independent from **Part 1 (PRODCONS)**.
+
