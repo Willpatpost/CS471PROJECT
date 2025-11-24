@@ -170,7 +170,3 @@ Full output is included in `sample_output.txt`.
 - OPT serves as a baseline to compare FIFO/LRU/MRU effectiveness.  
 - MRU is intentionally included to show how certain policies degrade performance.  
 - This program is independent from **Part 1 (PRODCONS)**.
-
-------------------------------------------------------------
-End of README
-------------------------------------------------------------
