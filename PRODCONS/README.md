@@ -141,7 +141,7 @@ Global statistics:
 ------------------------------------------------------------
 6. Sample Output (Excerpt)
 ------------------------------------------------------------
-
+```
 --- Consumer 1 summary ---
 Local aggregate: 242114.64
 Top store: 1 total=177031.43
@@ -169,7 +169,7 @@ Mar: 44526.74
 TOTAL: 501837.23
 
 Full 18-run sample is in sample_output.txt.
-
+```
 ------------------------------------------------------------
 7. Notes
 ------------------------------------------------------------
@@ -178,5 +178,6 @@ Full 18-run sample is in sample_output.txt.
 - All sales data is randomly generated.
 - The --all mode is provided to simplify grading.
 - Part 2 (VMEMMAN) is in its own folder and independent from this assignment.
+
 
 
