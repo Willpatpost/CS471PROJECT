@@ -1,4 +1,4 @@
-# CS471/571 Project – Fall 2025
+# CS471 Project – Fall 2025
 Operating System Concepts – Producer–Consumer Simulation & Virtual Memory Management
 
 This repository contains the full implementation of the two required components for the CS471/571 Fall 2025 course project:
