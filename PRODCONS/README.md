@@ -177,7 +177,3 @@ Full 18-run sample is in sample_output.txt.
 - All sales data is randomly generated.
 - The --all mode is provided to simplify grading.
 - Part 2 (VMEMMAN) is in its own folder and independent from this assignment.
-
-------------------------------------------------------------
-End of README
-------------------------------------------------------------
